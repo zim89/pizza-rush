@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useRef, useState, type FC } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Product } from '@prisma/client'
@@ -14,11 +14,11 @@ interface Props {
   className?: string
 }
 
-export const SearchInput: React.FC<Props> = ({ className }) => {
-  const [searchQuery, setSearchQuery] = React.useState('')
-  const [focused, setFocused] = React.useState(false)
-  const [products, setProducts] = React.useState<Product[]>([])
-  const ref = React.useRef(null)
+export const SearchInput: FC<Props> = ({ className }) => {
+  const [searchQuery, setSearchQuery] = useState('')
+  const [focused, setFocused] = useState(false)
+  const [products, setProducts] = useState<Product[]>([])
+  const ref = useRef(null)
 
   useClickAway(ref, () => {
     setFocused(false)
