@@ -1,10 +1,11 @@
-import { Button } from '@/shared/components/ui'
+import { Container, Title } from '@/shared/components'
 
 export default function Home() {
   return (
-    <div>
-      <h2>Home page</h2>
-      <Button variant='outline'>ecceec</Button>
-    </div>
+    <>
+      <Container className='mt-10'>
+        <Title text='Все пиццы' size='lg' className='font-extrabold' />
+      </Container>
+    </>
   )
 }
