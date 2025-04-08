@@ -7,14 +7,14 @@ export const seedUsers = [
     email: 'john.doe@gmail.com',
     password: hashSync('111111', 10),
     verified: new Date(),
-    role: RoleEnum.User,
+    role: RoleEnum.user,
   },
   {
     fullName: 'Admin Admin',
     email: 'admin@gmail.com',
     password: hashSync('111111', 10),
     verified: new Date(),
-    role: RoleEnum.Admin,
+    role: RoleEnum.admin,
   },
 ]
 
@@ -144,14 +144,12 @@ export const seedIngredients = [
 export const seedProducts = [
   {
     name: 'Omelette with ham and mushrooms',
-    imageUrl:
-      'https://media.dodostatic.net/image/r:292x292/11EE7970321044479C1D1085457A36EB.webp',
+    imageUrl: '/images/breakfast/0194b1f77c5670dca7df6e7b702d8db8.avif',
     categoryId: 2,
   },
   {
     name: 'Omelette with pepperoni',
-    imageUrl:
-      'https://media.dodostatic.net/image/r:292x292/11EE94ECF33B0C46BA410DEC1B1DD6F8.webp',
+    imageUrl: '/images/breakfast/0194b1f9d2e974849200ae997ed56dea.avif',
     categoryId: 2,
   },
   {
@@ -209,33 +207,23 @@ export const seedProducts = [
     categoryId: 4,
   },
   {
-    name: 'Irish Cappuccino',
-    imageUrl:
-      'https://media.dodostatic.net/image/r:292x292/11EE7D61999EBDA59C10E216430A6093.webp',
-    categoryId: 5,
-  },
-  {
     name: 'Coffee Caramel Cappuccino',
-    imageUrl:
-      'https://media.dodostatic.net/image/r:292x292/11EE7D61AED6B6D4BFDAD4E58D76CF56.webp',
+    imageUrl: '/images/drinks/11ee7d61aed6b6d4bfdad4e58d76cf56.avif',
     categoryId: 5,
   },
   {
     name: 'Coffee Coconut Latte',
-    imageUrl:
-      'https://media.dodostatic.net/image/r:292x292/11EE7D61B19FA07090EE88B0ED347F42.webp',
+    imageUrl: '/images/drinks/11ee7d61b19fa07090ee88b0ed347f42.avif',
     categoryId: 5,
   },
   {
     name: 'Coffee Americano',
-    imageUrl:
-      'https://media.dodostatic.net/image/r:292x292/11EE7D61B044583596548A59078BBD33.webp',
+    imageUrl: '/images/drinks/11ee7d61b02b810b8767d5ff70d15897.avif',
     categoryId: 5,
   },
   {
     name: 'Coffee Latte',
-    imageUrl:
-      'https://media.dodostatic.net/image/r:292x292/11EE7D61B0C26A3F85D97A78FEEE00AD.webp',
+    imageUrl: '/images/drinks/11ee7d61b0c26a3f85d97a78feee00ad.avif',
     categoryId: 5,
   },
 ]

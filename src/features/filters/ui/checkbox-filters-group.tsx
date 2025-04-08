@@ -90,7 +90,10 @@ export const CheckboxFiltersGroup = ({
       {items.length > limit && (
         <div className={showAll ? 'mt-4 border-t border-t-neutral-100' : ''}>
           <button
-            onClick={() => setShowAll(!showAll)}
+            onClick={() => {
+              setShowAll(!showAll)
+              setSearchValue('')
+            }}
             className='text-primary mt-3 cursor-pointer'
           >
             {showAll ? 'Hide' : '+ Show all'}
